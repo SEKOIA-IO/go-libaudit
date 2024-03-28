@@ -13,6 +13,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Deprecated
 
+## [2.5.0]
+
+### Added
+
+- Add ECS normalization for `exit_group` syscall. [#149](https://github.com/elastic/go-libaudit/pull/149)
+
+### Changed
+
+- Update syscall and architecture tables. [#147](https://github.com/elastic/go-libaudit/pull/147)
+
 ## [2.4.0]
 
 ### Added
@@ -258,7 +268,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   Linux kernel.
 - Added auparse package for parsing audit logs.
 
-[Unreleased]: https://github.com/elastic/go-libaudit/compare/v2.4.0...HEAD
+[Unreleased]: https://github.com/elastic/go-libaudit/compare/v2.5.0...HEAD
+[2.5.0]: https://github.com/elastic/go-libaudit/releases/tag/v2.5.0
 [2.4.0]: https://github.com/elastic/go-libaudit/releases/tag/v2.4.0
 [2.3.3]: https://github.com/elastic/go-libaudit/releases/tag/v2.3.3
 [2.3.2]: https://github.com/elastic/go-libaudit/releases/tag/v2.3.2
