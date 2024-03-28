@@ -548,6 +548,15 @@ normalizations:
     ecs:
       <<: *ecs-process
       type: change
+  - action: end
+    object:
+      what: process
+    how: syscall
+    syscalls:
+      # exit_group - exit all threads in a process
+      - exit_group
+    ecs: *ecs-process
+    type: end
   - action: created-anonymous-file
     object:
       what: file
@@ -704,7 +713,6 @@ normalizations:
   # acct - switch process accounting on or off
   # sigsuspend - wait for a signal
   # rt_sigsuspend - wait for a signal
-  # exit_group - exit all threads in a process
   # ioctl_userfaultfd - create a file descriptor for handling page faults in user space
   # sched_get_priority_max - get static priority range
   # sched_get_priority_min  - get static priority range
