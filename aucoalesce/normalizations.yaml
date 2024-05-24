@@ -555,6 +555,8 @@ normalizations:
     syscalls:
       # exit_group - exit all threads in a process
       - exit_group
+      # exit - terminate the calling process
+      - exit
     ecs: *ecs-process
     type: end
   - action: created-anonymous-file
